@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hover and Highlight</title>
+  <style>
+    .highlight {
+      font-weight: bold;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <a href="#" id="hoverLink">Hover Over This Link</a>
+  <p id="textToHighlight">This is a beautiful flower. These flowers are amazing!</p>
+
+  <script>
+    const link = document.getElementById('hoverLink');
+    const textToHighlight = document.getElementById('textToHighlight');
+
+    link.addEventListener('mouseover', () => {
+      const words = textToHighlight.innerText.split(' ');
+      const highlightedWords = ['beautiful', 'flowers', 'amazing'];
+
+      words.forEach((word, index) => {
+        if (highlightedWords.includes(word.toLowerCase())) {
+          words[index] = `<span class="highlight">${word}</span>`;
+        }
+      });
+
+      textToHighlight.innerHTML = words.join(' ');
+    });
+
+    link.addEventListener('mouseout', () => {
+      textToHighlight.innerHTML = "This is a beautiful flower. These flowers are amazing!";
+    });
+  </script>
+</body>
+</html>

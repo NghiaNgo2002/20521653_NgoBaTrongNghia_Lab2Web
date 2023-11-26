@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Submit Button</title>
+</head>
+<body>
+
+<button id="submitButton">Submit</button>
+
+<script>
+    var button = document.getElementById('submitButton');
+    var isSubmitted = false;
+  
+    button.addEventListener('click', function() {
+      if (isSubmitted) {
+        button.textContent = 'Submit';
+        isSubmitted = false;
+      } else {
+        button.textContent = 'Submitted!';
+        isSubmitted = true;
+      }
+    });
+</script>
+
+</body>
+</html>

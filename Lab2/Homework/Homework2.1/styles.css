@@ -1,0 +1,183 @@
+.card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    max-width: 100%;
+    max-height: fit-content;
+    margin: 20px;
+    overflow: hidden;
+}
+
+.card img {
+    width: 300px; /* Adjust the width as needed */
+    height: 350px; /* Maintain aspect ratio */
+    object-fit: cover ; /* Resize the image to cover the container */
+    margin-top: 0px;
+}   
+
+.card-content {
+    padding: 20px;
+    margin: 0;
+}
+
+.right {
+    flex: 1;
+    padding: 20px; /* Add padding to push the content to the right */
+}
+
+.bold {
+    font-weight: bold;
+}
+.folder img {
+    width: 24px; /* Set the width to your desired size */
+    height: 24px; /* Set the height to your desired size */
+}
+
+.folder {
+    display: flex;
+    align-items: center;
+}
+.folder span {
+    margin-left: 10px; /* Add some space between the image and the text */
+}
+
+.Experience {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.Experience .row {
+    display: flex;
+    justify-content: space-between; 
+}
+
+.Experience .column {
+    flex: 1;
+    padding: 10px;
+    margin:0;
+}
+
+
+.Experience h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Experience ul {
+    list-style: none;
+    list-style-type: disc;
+}
+
+.Subject {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.Subject h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.Subject ul {
+    list-style: none;
+    list-style-type: disc;
+}
+
+
+
+.Skills ul li {
+    margin-bottom: 5px;
+    padding-bottom: 10px;
+}
+
+.Skills{
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.Skills h1 {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Skills ul {
+    list-style: none;
+    list-style-type: disc;
+}
+
+.Skills ul li {
+    margin-bottom: 5px;
+}
+
+
+.soft-skill {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.skill-name {
+    flex: 1;
+    margin:auto;
+}
+
+.rating {
+    display: flex;
+    align-items: baseline;
+    margin-right: 1290px;
+}
+
+.star {
+    color: #FFD700; /* Yellow color for stars */
+    font-size: 20px;
+    cursor: pointer;
+    padding: 2px;  
+}
+
+.title_name {
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    font-family: "Times New Roman", Times, serif;
+    font-size: larger;
+    color: rgb(6, 160, 109);
+  }
+  
+  .paragraph_center {
+    display: flex;
+    margin: 2%;
+    justify-content: center;
+  }
+  
+  #menu ul {
+    background: #0c0c0ce4;
+    width: 120px;
+    padding: 0;
+    list-style-type: none;
+    text-align: center;
+  }
+  #menu li {
+    width: auto;
+    height: 90px;
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 1em;
+  }
+  #menu li a {
+    text-decoration: none;
+    color: #ffff;
+    font-weight: bold;
+    display: block;
+  }
+  #menu li:hover {
+    background: #1cbc96;
+  }
+  

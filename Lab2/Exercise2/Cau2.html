@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Example</title>
+</head>
+<body>
+
+<form id="myForm">
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username"><br><br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password"><br><br>
+  <input type="submit" value="Submit" id="submitButton">
+</form>
+
+<script>
+  var form = document.getElementById('myForm');
+  var submitButton = document.getElementById('submitButton');
+  var usernameInput = document.getElementById('username');
+  var passwordInput = document.getElementById('password');
+
+  // Function to get the value of the submit button
+  function getSubmitButtonValue(event) {
+    event.preventDefault(); // Prevents the default form submission
+
+    var submitButtonValue = submitButton.value;
+    var usernameValue = usernameInput.value;
+    var passwordValue = passwordInput.value;
+
+    console.log("Submit button value:", submitButtonValue);
+    console.log("Username entered:", usernameValue);
+    console.log("Password entered:", passwordValue);
+  }
+
+  // Add event listener to the form for submit event
+  form.addEventListener('submit', getSubmitButtonValue);
+</script
+
+</body>
+</html>
